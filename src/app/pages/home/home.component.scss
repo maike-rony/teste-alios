@@ -1,0 +1,18 @@
+@import '../../style/app.scss';
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100%;
+
+  &___content {
+    flex: 1;
+
+    &___search-document {
+      padding: 40px 20px 20px 20px;
+      height: 100%;
+      background-color: $background-color-primary;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import '../../style/app.scss';
+
+.container {
+  &___header {
+    line-height: 0px;
+    margin: 20px;
+
+    h1 {
+      font-weight: 700;
+    }
+
+    small {
+      font-weight: 100;
+      color: $seconday-color;
+    }
+  }
+}

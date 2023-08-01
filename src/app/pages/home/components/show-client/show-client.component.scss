@@ -1,0 +1,45 @@
+@import '../../../../style/app.scss';
+
+.container {
+  display: flex;
+  margin: 20px 0 0 0;
+
+  &__itens {
+    display: flex;
+    flex-direction: row;
+    grid-gap: 20px;
+
+    &__card {
+      width: 220px;
+      padding: 20px;
+      background-color: #ffff;
+      border: 1px none $color-span;
+
+      .grid {
+        display: grid;
+        grid-template-columns: 40px max-content;
+        grid-template-rows: repeat(2, 70px);
+      }
+
+
+      h4 {
+        font-weight: 800;
+        margin-bottom: 0px;
+      }
+
+      small {
+        color: $color-span;
+      }
+
+      div {
+        margin: 10px 0 0 0;
+        color: $color-span;
+      }
+
+      p {
+        color: #000;
+      }
+    }
+  }
+
+}

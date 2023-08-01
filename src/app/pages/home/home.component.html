@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="container___sidebar">
+    <app-sidebar [listIcons]="listIcons"></app-sidebar>
+  </div>
+  <div class="container___content">
+    <div class="container___content___header">
+      <app-header></app-header>
+    </div>
+    <div class="container___content___search-document">
+      <app-search-document (clientData)="getClientData($event)"></app-search-document>
+
+      <div *ngIf="clientData" class="container___content___show-client">
+        <app-show-client [clientData]="clientData"></app-show-client>
+      </div>
+    </div>
+  </div>
+</div>

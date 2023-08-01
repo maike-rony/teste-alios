@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="container__itens">
+    <div class="container__itens__card">
+      <h4>Situação cadastral do CPF</h4>
+      <small>Consulta na receita federal</small>
+
+      <div class="grid">
+        <div>
+          <mat-icon> person </mat-icon>
+        </div>
+        <div>
+          Nome
+          <p> {{ clientData.name }}
+        </div>
+
+        <div>
+          <mat-icon> {{clientData.status === 'Regular' ? 'check_circle' : 'cancel' }} </mat-icon>
+        </div>
+        <div>
+          Situação do CPF
+          <p> {{ clientData.status }}
+        </div>
+      </div>
+    </div>
+
+    <div class="container__itens__card">
+      <h4>Conta de Aplicação</h4>
+      <small>Cooperativa Viacredi</small>
+
+      <div class="grid">
+        <div>
+          <mat-icon> credit_card </mat-icon>
+        </div>
+        <div>
+          Número da conta
+          <p> {{ clientData.accountCobranded }}
+        </div>
+      </div>
+    </div>
+
+    <div class="container__itens__card">
+      <h4>Conta corrente</h4>
+      <small>Cooperativa Viacredi</small>
+
+      <div class="grid">
+        <div>
+          <mat-icon> credit_card </mat-icon>
+        </div>
+        <div>
+          Número da conta
+          <p> {{ clientData.accountNumber }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

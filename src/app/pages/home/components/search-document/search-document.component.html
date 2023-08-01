@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="container__search-document">
+    <h3> Informe o CPF do futuro cooperador (a)</h3>
+    <small>Se necessário, você poderá duplicar uma conta existente ou pausar e retomar este cadastro futuramente</small>
+    <small>Digite apenas os números (sem pontos ou traços). </small>
+
+    <div class="container__search-document__input">
+      <h4> CPF </h4>
+      <form [formGroup]="documentFormControl">
+        <mat-form-field appearance="outline">
+          <input formControlName="documentClient" type="text" maxlength="11" matInput placeholder="000.000.000-00">
+        </mat-form-field>
+
+        <button
+        [ngClass]="!validadeDocument() ? '--disabled' : ''"
+        mat-raised-button (click)="onSubmitDocument()"
+        [disabled]="!validadeDocument()" color="primary">Consultar por CPF</button>
+      </form>
+    </div>
+  </div>
+</div>

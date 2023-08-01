@@ -1,0 +1,47 @@
+@import '../../../../style/app.scss';
+
+:host .container {
+  &__search-document {
+
+    h3 {
+      font-size: 22px;
+    }
+
+    small {
+      display: block;
+      color: $color-span;
+    }
+
+    &__input {
+      ::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+        padding: 0 5px 5px 0px;
+      }
+
+      mat-form-field {
+        width: 260px;
+
+        input {
+          display: flex;
+          height: 25px;
+        }
+      }
+
+      h4 {
+        margin: 20px 0 5px 0px;
+      }
+
+      button {
+        cursor: pointer;
+        width: 150px;
+        margin-left: 20px;
+        font-size: 12px;
+        background-color: #165C7D;
+        color: #ffff;
+      }
+
+      .--disabled {
+        background-color: #A2BECB;
+      }
+    }
+  }
+}
